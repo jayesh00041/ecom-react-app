@@ -23,7 +23,7 @@ const CartPage = () => {
     const handleClose = () => {
         setOpen(false);
     };
-    document.title="Hurst - "+Cart;
+    document.title="Hurst - Cart";
     return (
         <div className="list-group list-group-numbered p-3">
             <div class="text-center">
