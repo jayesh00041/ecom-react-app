@@ -14,7 +14,7 @@ import Button from '@mui/material/Button';
 const CartPage = () => {
     const dispatch = useDispatch(state => state.cart);
     const cartItems = useSelector((state) => state.cart);
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     dispatch(getTotals());
     function handdleCheckout() {
         dispatch(clearCart());
