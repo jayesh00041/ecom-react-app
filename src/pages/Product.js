@@ -18,7 +18,7 @@ export default function Product() {
             .catch(err=>seterr(true))
     }, [])
     
-
+    document.title="Hurst - "+product.title;
 
 
     return err?<Noproduct />:product === null ? <Loader /> : (

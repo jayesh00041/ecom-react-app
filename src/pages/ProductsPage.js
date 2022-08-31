@@ -4,6 +4,8 @@ import { Filters, Products } from '../components/ProductsPage'
 import { Loader } from '../components'
 import { useParams } from 'react-router-dom'
 
+
+
 const ProductsPage = () => {
     const [products, setProducts] = useState(null)
     let { catagory } = useParams()
@@ -24,7 +26,7 @@ const ProductsPage = () => {
         default:
             break;
     }
-
+    document.title="Hurst - "+catagory;
     useEffect(() => {
         console.log(url);
         fetch('https://fakestoreapi.com/'+url)
