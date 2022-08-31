@@ -33,7 +33,7 @@ export default function NavigationBar() {
   return (
     <nav>
       
-      <div className='row navigation-bar align-items-center'>
+      <div className='row navigation-bar align-items-center w-100'>
         <div className='col-3 text-left ps-4'>
           <span onClick={handdleManu} style={mountedStyle} className='menu-icon'>
             {(manu) ? <FaBars size="1.5rem" /> : <BsXLg size="1.5rem" />}
