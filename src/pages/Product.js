@@ -14,11 +14,15 @@ export default function Product() {
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/${p_id}`)
             .then(res => res.json())
-            .then(json => setProduct(json))
+            .then(json => {
+                setProduct(json)
+                document.title="Hurst - "+product.title;
+            })
             .catch(err=>seterr(true))
+            
     }, [])
     
-    document.title="Hurst - "+product.title;
+    
 
 
     return err?<Noproduct />:product === null ? <Loader /> : (
