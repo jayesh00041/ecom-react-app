@@ -16,7 +16,7 @@ export default function Product() {
             .then(res => res.json())
             .then(json => {
                 setProduct(json)
-                document.title="Hurst - "+product.title;
+                // document.title="Hurst - "+product.title;
             })
             .catch(err=>seterr(true))
             
